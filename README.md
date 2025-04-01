@@ -34,7 +34,7 @@ RadIA es un sistema basado en redes neuronales para la clasificación y análisi
        - Absceso, ARDS, Atelectasia, Cardiomegalia, Neumonía, Tuberculosis, etc. (ver imagen de referencia).
 
 5. **Estimación de Severidad**
-   - Cada modelo también devuelve un valor de severidad entre 0 y 1.
+   - El modelo de predicción de severidad está diseñado para abordar el problema de predicción de la gravedad o intensidad de una condición médica a partir de imágenes. La predicción de la severidad se trata como una tarea de regresión, lo que significa que el modelo genera un valor continuo que cuantifica la severidad de la condición diagnosticada.
 
 6. **Visualización de Resultados**
    - La imagen procesada se muestra junto con la clasificación obtenida.
@@ -62,10 +62,6 @@ python predict.py --image path/to/image.png
 ```
 
 ## Autores
-- [Tu Nombre]
-- [Colaboradores]
-
-## Licencia
-Este proyecto está bajo la licencia [MIT](LICENSE).
+- Gisela Briseida Ramirez Santiago
 
 
