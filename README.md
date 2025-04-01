@@ -33,10 +33,15 @@ RadIA es un sistema basado en redes neuronales para la clasificación y análisi
      - `ChestDisease.keras`, que clasifica entre:
        - Absceso, ARDS, Atelectasia, Cardiomegalia, Neumonía, Tuberculosis, etc. (ver imagen de referencia).
 
-5. **Estimación de Severidad**
+5. **Estimación y predicción de Severidad**
    - El modelo de predicción de severidad está diseñado para abordar el problema de predicción de la gravedad o intensidad de una condición médica a partir de imágenes. La predicción de la severidad se trata como una tarea de regresión, lo que significa que el modelo genera un valor continuo que cuantifica la severidad de la condición diagnosticada.
-
-6. **Visualización de Resultados**
+   - La predicción de la severidad se realiza de manera paralela a la clasificación, a través de una capa densa adicional. Esta capa se encarga de predecir un valor continuo que refleja la severidad de la condición médica detectada en la imagen.
+      - Capa Densa de 128 neuronas
+      - Capa de salida con 1 neurona y una activacion lineal
+6. **Agrupacion de radiografias**
+    - detectar patrones anómalos en las radiografías que podrían estar asociados con enfermedades o condiciones raras. Al agrupar las imágenes de manera no supervisada, es posible identificar subgrupos de pacientes con características clínicas similares, incluso si las etiquetas exactas no están disponibles.
+    - Se realizo una extraccion de las caracteristicas de los modelos ya entrenados de multiples radiografias, lo que nos permite agruparlas usando la tecnica de Kmean.
+7. **Visualización de Resultados**
    - La imagen procesada se muestra junto con la clasificación obtenida.
 
 ## Instalación
