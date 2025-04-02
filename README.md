@@ -68,5 +68,6 @@ python predict.py --image path/to/image.png
 
 ## Autores
 - Gisela Briseida Ramirez Santiago
+- Francisco Valentín Barcenas Cruz
 
 
